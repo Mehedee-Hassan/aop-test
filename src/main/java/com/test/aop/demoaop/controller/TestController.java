@@ -1,6 +1,7 @@
 package com.test.aop.demoaop.controller;
 
-import com.test.aop.demoaop.aop.TestMe;
+import com.test.aop.demoaop.aop.inf.TestMe;
+import com.test.aop.demoaop.aop.inf.TestMeAround;
 import com.test.aop.demoaop.controller.inf.TestControllerInf;
 import com.test.aop.demoaop.service.TestService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +18,7 @@ public class TestController implements TestControllerInf {
 
     @Override
     @TestMe
+    @TestMeAround
     @GetMapping("/v1/test")
     public String testReply(){
         String response =  "This is a test reply from Controller."

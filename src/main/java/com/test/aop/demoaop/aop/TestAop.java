@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TestAop {
 
-    @Before("@annotation(TestMe)")
+    @Before("@annotation(com.test.aop.demoaop.aop.inf.TestMe)")
     public void beforeController(){
         System.out.print("### Before test");
     }
