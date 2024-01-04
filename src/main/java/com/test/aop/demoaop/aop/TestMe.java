@@ -1,4 +1,4 @@
-package com.test.aop.demoaop.api;
+package com.test.aop.demoaop.aop;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

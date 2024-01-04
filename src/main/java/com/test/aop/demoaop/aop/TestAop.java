@@ -1,4 +1,4 @@
-package com.test.aop.demoaop.api;
+package com.test.aop.demoaop.aop;
 
 
 import org.aspectj.lang.annotation.Aspect;

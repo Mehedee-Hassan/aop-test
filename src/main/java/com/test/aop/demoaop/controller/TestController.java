@@ -1,6 +1,6 @@
 package com.test.aop.demoaop.controller;
 
-import com.test.aop.demoaop.api.TestMe;
+import com.test.aop.demoaop.aop.TestMe;
 import com.test.aop.demoaop.controller.inf.TestControllerInf;
 import com.test.aop.demoaop.service.TestService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController implements TestControllerInf {
 
-    private TestService testService;
+    private final TestService testService;
     public TestController(TestService testService){
         this.testService = testService;
     }
